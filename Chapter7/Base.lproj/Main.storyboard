@@ -25,10 +25,10 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="03Y-Mr-oun">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="03Y-Mr-oun" customClass="ItemTableViewCell" customModule="Chapter7" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88.5" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="03Y-Mr-oun" id="rgO-Ea-x59">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="03Y-Mr-oun" id="rgO-Ea-x59" customClass="ItemTableViewCell" customModule="Chapter7" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -68,6 +68,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="itemImageView" destination="hX0-ig-Snm" id="3mU-aV-Zgg"/>
+                                    <outlet property="itemPriceLabel" destination="2W0-ff-a2C" id="t3c-O2-dlL"/>
+                                    <outlet property="itemTitleLabel" destination="5x7-ge-kZc" id="ytm-Nx-Thn"/>
                                     <segue destination="cQ5-qv-Hpf" kind="show" id="ZUy-hP-eth"/>
                                 </connections>
                             </tableViewCell>
